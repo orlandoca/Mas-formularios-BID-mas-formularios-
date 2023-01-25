@@ -21,7 +21,12 @@ function App() {
             onChange={(e) => setFirstName(e.target.value)}
           />
         </div>
-        <p style={{ display: firstname.length > 2 ? "none" : "block" }}>
+        <p
+          style={{
+            display:
+              firstname.length >= 2 || firstname.length == 0 ? "none" : "block",
+          }}
+        >
           First Name must be at least 2 characters
         </p>
 
@@ -34,7 +39,12 @@ function App() {
             onChange={(e) => setLastName(e.target.value)}
           />
         </div>
-        <p style={{ display: firstname.length > 2 ? "none" : "block" }}>
+        <p
+          style={{
+            display:
+              lastname.length >= 2 || lastname.length == 0 ? "none" : "block",
+          }}
+        >
           Last Name must be at least 2 characters
         </p>
 
@@ -47,7 +57,11 @@ function App() {
             onChange={(e) => setEmail(e.target.value)}
           />
         </div>
-        <p style={{ display: email.length > 5 ? "none" : "block" }}>
+        <p
+          style={{
+            display: email.length > 5 || email.length == 0 ? "none" : "block",
+          }}
+        >
           Email must be at least 5 characters
         </p>
 
@@ -61,10 +75,22 @@ function App() {
           />
         </div>
 
-        <p style={{ display: password1.length > 8 ? "none" : "block" }}>
+        <p
+          style={{
+            display:
+              password1.length > 8 || password1.length == 0 ? "none" : "block",
+          }}
+        >
           Password must be at least 8 characters
         </p>
-        <p style={{ display: password1 === password2 ? "none" : "block" }}>
+        <p
+          style={{
+            display:
+              password1 === password2 || password2.length == 0
+                ? "none"
+                : "block",
+          }}
+        >
           Password must match
         </p>
 
