@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+}
+
+.containt-main {
+  width: 100%;
+  padding: 10px;
+  background: #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form {
+  max-width: 350px;
+  width: 100%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+input {
+  padding: 5px;
+  width: 60%;
+}
